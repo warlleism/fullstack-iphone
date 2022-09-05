@@ -19,7 +19,7 @@
 
     //Rota para listagem de produtos
     app.get('/listar', async (req, res) => {
-        const clientes = await db.selectCustomers("clientes")
+        const clientes = await db.listarProduto()
         res.send(clientes)
     })
 

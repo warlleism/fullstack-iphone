@@ -13,9 +13,9 @@ const connect = async () => {
 
 connect();
 
-const selectCustomers = async () => {
+const listarProduto = async () => {
     const conn = await connect();
     return await conn.query('SELECT * FROM produto;');
 }
 
-module.exports = { selectCustomers}
+module.exports = { listarProduto }
