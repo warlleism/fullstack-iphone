@@ -1,0 +1,115 @@
+.main {
+    width: 100%;
+    display: flex;
+    height: 700px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .container-descricao {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .texto1 {
+            font-weight: 700;
+            color: #1d1d1f;
+            font-size: 1.3rem;
+        }
+
+        .texto2 {
+            font-size: 4rem;
+            font-weight: 900;
+            color: #18181a;
+        }
+
+        .texto3 {
+            width: 40%;
+            font-weight: 900;
+            font-size: 1.3rem;
+            color: #1d1d1fad;
+            letter-spacing: 1px;
+            margin: 20px 0px 20px 0px;
+        }
+
+        .texto4 {
+            font-weight: 900;
+            font-size: 1.3rem;
+            color: #1d1d1f94;
+            margin: 20px 0px 20px 0px;
+        }
+
+        .texto5 {
+            cursor: pointer;
+            color: #ffff;
+            font-size: 1rem;
+            font-weight: 900;
+            border-radius: 50px;
+            margin: 20px 0px 20px 0px;
+            background-color: #0077ed;
+            transition: .5s ease-in-out;
+            padding: 14px 20px 14px 20px;
+        }
+
+        .texto5:hover {
+            transition: .5s ease-in-out;
+            background-color: #00478d;
+
+        }
+    }
+
+    .container-imagens {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 80%;
+            position: absolute;
+            transition: .5s ease-in-out;
+        }
+    }
+}
+
+.lista-cores {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+    ul {
+        width: 100%;
+    }
+
+    .container-lista {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            display: flex;
+            cursor: pointer;
+            list-style: none;
+            margin-left: 10px;
+            align-items: center;
+            flex-direction: column;
+
+            .Circle {
+                width: 30px;
+                height: 30px;
+                margin-bottom: 10px;
+                border-radius: 100%;
+                outline-offset: 2px;
+                transition: .2s ease-in-out;
+            }
+        }
+    }
+
+}
