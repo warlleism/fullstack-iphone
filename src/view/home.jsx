@@ -42,6 +42,7 @@ const Home = () => {
         const rosa = document.getElementById("rosa")
         const verde = document.getElementById("verde")
         const vermelho = document.getElementById("vermelho")
+        const botao = document.getElementById("botao")
 
         azul.style.outline = value == 'azul' ? `solid 4px ${cor}` : ""
         estrelar.style.outline = value == 'estrelar' ? `solid 4px ${cor}` : ""
@@ -50,6 +51,10 @@ const Home = () => {
         verde.style.outline = value == 'verde' ? `solid 4px ${cor}` : ""
         vermelho.style.outline = value == 'vermelho' ? `solid 4px ${cor}` : ""
 
+        setTimeout(() => {
+            botao.style.backgroundColor = cor
+        }, 10)
+        
     }
 
     useEffect(() => {
@@ -66,7 +71,7 @@ const Home = () => {
                             <div className='texto2'>{e?.titulo}</div>
                             <div className='texto3'>{e?.specs}</div>
                             <div className='texto4'>A partir de {e?.preco}</div>
-                            <div className='texto5'>Comprar</div>
+                            <div id='botao' className='texto5'>Comprar</div>
                         </div>
                         <div className='container-imagens'>
                             <img id='img1' src={`data:image/png;base64,${e?.imagemAzul}`} />
@@ -87,23 +92,23 @@ const Home = () => {
                             <div onClick={() => showContent('azul', '#276787')} id='azul' className='Circle' style={{ backgroundColor: "#276787" }}></div>
                             <div>Azul</div>
                         </li>
-                        <li >
+                        <li>
                             <div onClick={() => showContent("estrelar", '#dcdbda')} id='estrelar' className='Circle' style={{ backgroundColor: "#dcdbda" }}></div>
                             <div>Estrelar</div>
                         </li>
-                        <li >
+                        <li>
                             <div onClick={() => showContent("meianoite", '#232a31')} id='meianoite' className='Circle' style={{ backgroundColor: "#232a31" }}></div>
                             <div>Meia-Noite</div>
                         </li>
-                        <li >
+                        <li>
                             <div onClick={() => showContent("rosa", '#faddd7')} id='rosa' className='Circle' style={{ backgroundColor: "#faddd7" }}></div>
                             <div>Rosa</div>
                         </li>
-                        <li >
+                        <li>
                             <div onClick={() => showContent("verde", '#394c38')} id='verde' className='Circle' style={{ backgroundColor: "#394c38" }}></div>
                             <div>Verde</div>
                         </li>
-                        <li >
+                        <li>
                             <div onClick={() => showContent("vermelho", '#bf0013')} id='vermelho' className='Circle' style={{ backgroundColor: "#bf0013" }}></div>
                             <div>Vermelho</div>
                         </li>

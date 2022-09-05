@@ -111,5 +111,69 @@
             }
         }
     }
+}
 
+@media screen and (max-width: 768px) {
+
+    .main {
+        height: 600px;
+
+        .container-descricao {
+            .texto1 {
+                font-size: 1.7rem;
+            }
+
+            .texto2 {
+                font-size: 1.4rem;
+            }
+
+            .texto3 {
+                width: 70%;
+            }
+        }
+    }
+
+
+    .lista-cores {
+        height: 100px;
+        margin-top: 0;
+
+        ul {
+            margin: 130px 0px 30px 0px;
+
+            .container-lista {
+                li {
+                    div {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .main {
+        .container-descricao {
+
+            .texto3 {
+                width: 95%;
+            }
+        }
+    }
+
+
+    .lista-cores {
+
+        ul {
+            .container-lista {
+                li {
+                    div {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
 }
